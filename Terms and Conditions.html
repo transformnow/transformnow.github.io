@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | The Complete Guide to Personal Transformation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to the Terms page */
+        .terms-section {
+            padding-top: 7rem;
+            padding-bottom: var(--section-padding);
+            background-color: var(--light);
+        }
+        
+        .terms-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: clamp(1rem, 5vw, 2.5rem);
+            background-color: var(--white);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        
+        .terms-container h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--dark);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+        
+        .terms-container h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+        }
+        
+        .terms-container h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+        }
+        
+        .terms-container p, .terms-container ul, .terms-container ol {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--dark);
+            font-size: clamp(0.95rem, 1.5vw, 1rem);
+        }
+        
+        .terms-container ul, .terms-container ol {
+            padding-left: clamp(1.25rem, 4vw, 2rem);
+        }
+        
+        .terms-container strong {
+            font-weight: 700;
+        }
+        
+        .terms-container .last-updated {
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #777;
+        }
+        
+        .terms-container .section {
+            margin-bottom: 2rem;
+            scroll-margin-top: 100px; /* For smooth scrolling to anchors */
+        }
+        
+        .terms-toc {
+            background-color: #f9f9f9;
+            padding: clamp(1rem, 3vw, 1.5rem);
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            border-left: 3px solid var(--primary);
+        }
+        
+        .terms-toc h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .terms-toc ol {
+            list-style-type: decimal;
+            columns: auto;
+            column-width: clamp(200px, 40vw, 300px);
+            column-gap: 2rem;
+        }
+        
+        .terms-toc li {
+            margin-bottom: 0.5rem;
+            break-inside: avoid;
+        }
+        
+        .terms-toc a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-block;
+            padding: 0.2rem 0;
+        }
+        
+        .terms-toc a:hover {
+            color: var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .terms-section {
+                padding-top: 5rem;
+            }
+            
+            .terms-container {
+                border-radius: 0;
+                box-shadow: none;
+            }
+            
+            .terms-toc ol {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Transform</a>
+            <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html#benefits">Benefits</a>
+                    <a href="index.html#content">What's Inside</a>
+                    <a href="index.html#testimonials">Reviews</a>
+                    <a href="index.html#community">Community</a>
+                    <a href="index.html#pricing">Pricing</a>
+                    <a href="index.html#faq">FAQ</a>
+                    <a href="https://discord.gg/UMexEde5" target="_blank" class="discord-nav-btn">
+                        <span class="discord-icon">
+                            <svg width="16" height="16" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        Join Discord
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="terms-section">
+        <div class="terms-container">
+            <h1>TERMS AND CONDITIONS</h1>
+            <p class="last-updated"><strong>Last Updated: March 16, 2025</strong></p>
+            
+            <div class="terms-toc">
+                <h3>Table of Contents</h3>
+                <ol>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#definitions">Definitions</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#account-registration">Account Registration</a></li>
+                    <li><a href="#payment-donations">Payment and Donations</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property Rights</a></li>
+                    <li><a href="#prohibited-uses">Prohibited Uses</a></li>
+                    <li><a href="#discord-community">Discord Community Rules</a></li>
+                    <li><a href="#user-contributions">User Contributions</a></li>
+                    <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#governing-law">Governing Law and Jurisdiction</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#severability">Severability</a></li>
+                    <li><a href="#waiver">Waiver</a></li>
+                    <li><a href="#entire-agreement">Entire Agreement</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ol>
+            </div>
+            
+            <div id="introduction" class="section">
+                <h2>1. INTRODUCTION</h2>
+                <p>Welcome to The Complete Guide to Personal Transformation website ("Site"). These Terms and Conditions ("Terms") govern your access to and use of our Site, including any content, functionality, products, and services offered on or through the Site.</p>
+                <p>By accessing or using our Site, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not access or use our Site.</p>
+            </div>
+            
+            <div id="definitions" class="section">
+                <h2>2. DEFINITIONS</h2>
+                <ul>
+                    <li>"We," "us," "our," and "Company" refer to The Complete Guide to Personal Transformation and its operators.</li>
+                    <li>"You" and "your" refer to the user or viewer of our Site.</li>
+                    <li>"Guide" or "Content" refers to The Complete Guide to Personal Transformation eBook and related materials.</li>
+                    <li>"Community" refers to our Discord community and related services.</li>
+                </ul>
+            </div>
+            
+            <div id="eligibility" class="section">
+                <h2>3. ELIGIBILITY</h2>
+                <p>You must be at least 18 years of age to access and use our Site or to purchase our products. By using our Site, you represent and warrant that you meet this eligibility requirement.</p>
+            </div>
+            
+            <div id="account-registration" class="section">
+                <h2>4. ACCOUNT REGISTRATION</h2>
+                <p>To access certain features of our Site, including our Discord community, you may need to register for an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.</p>
+            </div>
+            
+            <div id="payment-donations" class="section">
+                <h2>5. PAYMENT AND DONATIONS</h2>
+                
+                <h3>5.1 Payment</h3>
+                <p>The payment you make to receive our Guide is characterized as a donation. In return for your donation, you receive our Guide as a thank-you gift. All donations are processed through our payment processor (PayPal) and are subject to their terms and conditions.</p>
+                
+                <h3>5.2 Pricing and Taxes</h3>
+                <p>All prices are displayed in USD unless otherwise specified. Prices are subject to change without notice. Any applicable taxes are not included in the displayed price and may be added at checkout.</p>
+                
+                <h3>5.3 Non-Refundable</h3>
+                <p>As clearly stated on our Site, all donations are voluntary and non-refundable. By making a donation, you acknowledge and agree to this non-refundable nature.</p>
+            </div>
+            
+            <div id="intellectual-property" class="section">
+                <h2>6. INTELLECTUAL PROPERTY RIGHTS</h2>
+                
+                <h3>6.1 Ownership</h3>
+                <p>The Site and its entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by the Company, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+                
+                <h3>6.2 Limited License</h3>
+                <p>Upon receiving our Guide, you are granted a limited, non-exclusive, non-transferable, non-sublicensable license to access and use the Guide for your personal, non-commercial use only. You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Site or in our Guide, except as follows:</p>
+                <ul>
+                    <li>Your computer may temporarily store copies of such materials in RAM incidental to your accessing and viewing those materials.</li>
+                    <li>You may store files that are automatically cached by your Web browser for display enhancement purposes.</li>
+                    <li>You may print one copy of a reasonable number of pages of the Guide for your own personal, non-commercial use and not for further reproduction, publication, or distribution.</li>
+                </ul>
+            </div>
+            
+            <div id="prohibited-uses" class="section">
+                <h2>7. PROHIBITED USES</h2>
+                <p>You may use our Site only for lawful purposes and in accordance with these Terms. You agree not to use our Site:</p>
+                <ul>
+                    <li>In any way that violates any applicable federal, state, local, or international law or regulation.</li>
+                    <li>To transmit, or procure the sending of, any advertising or promotional material, including any "junk mail," "chain letter," "spam," or any other similar solicitation.</li>
+                    <li>To impersonate or attempt to impersonate the Company, a Company employee, another user, or any other person or entity.</li>
+                    <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Site, or which, as determined by us, may harm the Company or users of the Site or expose them to liability.</li>
+                </ul>
+            </div>
+            
+            <div id="discord-community" class="section">
+                <h2>8. DISCORD COMMUNITY RULES</h2>
+                
+               
+                
+                <h3>8.1 Community Conduct</h3>
+                <p>While participating in our Discord community, you agree to:</p>
+                <ul>
+                    <li>Treat all members with respect and dignity.</li>
+                    <li>Refrain from posting offensive, inappropriate, or harmful content.</li>
+                    <li>Not engage in spamming, harassment, or any form of abusive behavior.</li>
+                    <li>Not share, distribute, or post our Guide or exclusive community content outside the community.</li>
+                    <li>Follow all Discord's Terms of Service (<a href="https://discord.com/terms" target="_blank">https://discord.com/terms</a>).</li>
+                </ul>
+                
+                <h3>8.2 Termination of Access</h3>
+                <p>We reserve the right to terminate or suspend your access to the Discord community at any time, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.</p>
+            </div>
+            
+            <div id="user-contributions" class="section">
+                <h2>9. USER CONTRIBUTIONS</h2>
+                
+                <h3>9.1 User Content</h3>
+                <p>Any content you post, upload, share, store, or otherwise provide through our Site or Discord community is your "User Content." You retain all rights in your User Content.</p>
+                
+                <h3>9.2 License to User Content</h3>
+                <p>By posting User Content, you grant us a non-exclusive, royalty-free, transferable, sublicensable, worldwide license to use, store, display, reproduce, modify, create derivative works, perform, and distribute your User Content on our Site and Discord community. This license terminates when you delete your User Content or your account.</p>
+                
+                <h3>9.3 Responsibility for User Content</h3>
+                <p>You are solely responsible for your User Content and the consequences of posting or publishing it. We have the right, but not the obligation, to monitor and edit or remove any User Content.</p>
+            </div>
+            
+            <div id="disclaimer" class="section">
+                <h2>10. DISCLAIMER OF WARRANTIES</h2>
+                <p>YOUR USE OF THE SITE, ITS CONTENT, AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE IS AT YOUR OWN RISK. THE SITE, ITS CONTENT, AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE SITE ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
+                <p>NEITHER THE COMPANY NOR ANY PERSON ASSOCIATED WITH THE COMPANY MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SITE.</p>
+            </div>
+            
+            <div id="limitation" class="section">
+                <h2>11. LIMITATION OF LIABILITY</h2>
+                <p>IN NO EVENT WILL THE COMPANY, ITS AFFILIATES, OR THEIR LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE SITE, ANY WEBSITES LINKED TO IT, ANY CONTENT ON THE SITE OR SUCH OTHER WEBSITES, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.</p>
+            </div>
+            
+            <div id="indemnification" class="section">
+                <h2>12. INDEMNIFICATION</h2>
+                <p>You agree to defend, indemnify, and hold harmless the Company, its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Site.</p>
+            </div>
+            
+            <div id="governing-law" class="section">
+                <h2>13. GOVERNING LAW AND JURISDICTION</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the Company is established, without regard to its conflict of law provisions. Any legal suit, action, or proceeding arising out of, or related to, these Terms or the Site shall be instituted exclusively in the courts of that jurisdiction.</p>
+            </div>
+            
+            <div id="changes" class="section">
+                <h2>14. CHANGES TO TERMS</h2>
+                <p>We may revise and update these Terms from time to time in our sole discretion. All changes are effective immediately when we post them. Your continued use of the Site following the posting of revised Terms means that you accept and agree to the changes.</p>
+            </div>
+            
+            <div id="severability" class="section">
+                <h2>15. SEVERABILITY</h2>
+                <p>If any provision of these Terms is held by a court or other tribunal of competent jurisdiction to be invalid, illegal, or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of the Terms will continue in full force and effect.</p>
+            </div>
+            
+            <div id="waiver" class="section">
+                <h2>16. WAIVER</h2>
+                <p>No waiver by the Company of any term or condition set out in these Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of the Company to assert a right or provision under these Terms shall not constitute a waiver of such right or provision.</p>
+            </div>
+            
+            <div id="entire-agreement" class="section">
+                <h2>17. ENTIRE AGREEMENT</h2>
+                <p>These Terms, our Privacy Policy, and any terms and conditions incorporated herein by reference constitute the sole and entire agreement between you and the Company regarding the Site and supersede all prior and contemporaneous understandings, agreements, representations, and warranties, both written and oral, regarding the Site.</p>
+            </div>
+            
+            <div id="contact" class="section">
+                <h2>18. CONTACT US</h2>
+                <p>For questions about these Terms, please contact us at:</p>
+                <ul>
+                    <li>Email: <a href="mailto:kontakt@transform.com">kontakt@transform.com</a></li>
+                    <li>Discord: Through our official Discord server</li>
+                </ul>
+                <p><em>By using our Site, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:kontakt@transform.com">Contact Us</a>
+                <a href="https://discord.gg/UMexEde5" target="_blank">Discord</a>
+            </div>
+            <p>&copy; 2025 The Complete Guide to Personal Transformation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
