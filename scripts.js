@@ -233,26 +233,60 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Initial check for elements in view
         checkFade();
-        
+        function updateTimerDisplay(difference) {
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    
+    const daysElement = document.getElementById('countdown-days');
+    const hoursElement = document.getElementById('countdown-hours');
+    const minutesElement = document.getElementById('countdown-minutes');
+    const secondsElement = document.getElementById('countdown-seconds');
+    
+    if (daysElement) daysElement.innerText = String(days).padStart(2, '0');
+    if (hoursElement) hoursElement.innerText = String(hours).padStart(2, '0');
+    if (minutesElement) minutesElement.innerText = String(minutes).padStart(2, '0');
+    if (secondsElement) secondsElement.innerText = String(seconds).padStart(2, '0');
+}
         // Countdown timer functionality
-        function updateCountdown() {
-            // Set the target date (48 hours from now)
-            const now = new Date();
-            const target = new Date(now);
-            target.setHours(now.getHours() + 48);
-            
-            const difference = target - now;
-            
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-            
-            document.getElementById('countdown-days').innerText = String(days).padStart(2, '0');
-            document.getElementById('countdown-hours').innerText = String(hours).padStart(2, '0');
-            document.getElementById('countdown-minutes').innerText = String(minutes).padStart(2, '0');
-            document.getElementById('countdown-seconds').innerText = String(seconds).padStart(2, '0');
-        }
-        
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+    function updateCountdown() {
+    let target;
+    
+    // Check if we already have a stored target date
+    const storedTarget = localStorage.getItem('countdownTarget');
+    
+    if (storedTarget) {
+        target = new Date(parseInt(storedTarget));
+    } else {
+        // Set the target date (48 hours from now) and store it
+        const now = new Date();
+        target = new Date(now);
+        target.setHours(now.getHours() + 48);
+        localStorage.setItem('countdownTarget', target.getTime().toString());
+    }
+    
+    const now = new Date();
+    const difference = target - now;
+    
+    // If the countdown is over
+    if (difference <= 0) {
+        // Reset the timer if it's expired
+        localStorage.removeItem('countdownTarget');
+        // Set a new target
+        const newNow = new Date();
+        target = new Date(newNow);
+        target.setHours(newNow.getHours() + 48);
+        localStorage.setItem('countdownTarget', target.getTime().toString());
+        // Calculate new difference
+        const newDifference = target - newNow;
+        updateTimerDisplay(newDifference);
+    } else {
+        updateTimerDisplay(difference);
+    }
+}
+
+      setInterval(updateCountdown, 1000);
+
+// Initialize the countdown
+updateCountdown();
