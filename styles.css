@@ -1150,7 +1150,7 @@
         color: var(--primary);
         text-decoration: none;
     }
-    /* E-book Preview Section Styles */
+/* E-book Preview Section Styles */
 .ebook-preview {
     padding: var(--section-padding) 0;
     background-color: var(--white);
